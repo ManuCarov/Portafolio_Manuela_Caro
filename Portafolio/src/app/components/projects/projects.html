@@ -1,0 +1,43 @@
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects" [class.featured]="project.featured">
+        <div class="project-media">
+          <iframe 
+            *ngIf="project.videoUrl" 
+            [src]="getSafeUrl(project.videoUrl)" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            class="project-video">
+          </iframe>
+          <img 
+            *ngIf="!project.videoUrl && project.imageUrl" 
+            [src]="project.imageUrl" 
+            [alt]="project.title"
+            class="project-image" />
+          <div *ngIf="!project.videoUrl && !project.imageUrl" class="project-placeholder">
+            <span class="placeholder-icon">📁</span>
+          </div>
+          <div *ngIf="project.featured" class="featured-badge">⭐ Destacado</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+          <div class="project-technologies">
+            <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+          </div>
+          <div class="project-links" *ngIf="project.githubUrl || project.liveUrl">
+            <a *ngIf="project.githubUrl" [href]="project.githubUrl" target="_blank" class="project-link">
+              <span>GitHub</span>
+            </a>
+            <a *ngIf="project.liveUrl" [href]="project.liveUrl" target="_blank" class="project-link">
+              <span>Ver Demo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-category" *ngFor="let category of skillCategories">
+        <div class="category-header">
+          <span class="category-icon">{{ category.icon }}</span>
+          <h3 class="category-title">{{ category.title }}</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag" *ngFor="let skill of getSkillsForCategory(category.key)">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

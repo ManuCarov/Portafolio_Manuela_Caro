@@ -1,0 +1,16 @@
+<section id="academic" class="academic-section">
+  <div class="container">
+    <h2 class="section-title">Experiencia Académica</h2>
+    <div class="academic-grid">
+      <div class="academic-card" *ngFor="let exp of academicExperience">
+        <div class="academic-icon">🏆</div>
+        <h3 class="academic-title">{{ exp.title }}</h3>
+        <p class="academic-company">{{ exp.company }}</p>
+        <p class="academic-period">{{ exp.period }}</p>
+        <ul class="academic-responsibilities">
+          <li *ngFor="let resp of exp.responsibilities">{{ resp }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
