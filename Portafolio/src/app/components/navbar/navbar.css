@@ -24,6 +24,7 @@
   color: #6366f1;
   cursor: pointer;
   transition: color 0.3s ease;
+  white-space: nowrap;  /* ✅ Evita que se separe en líneas */
 }
 
 .nav-brand:hover {
@@ -91,6 +92,10 @@
 }
 
 @media (max-width: 968px) {
+  .nav-brand {
+    font-size: 1.3rem;  /* Un poco más pequeño en móvil */
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -119,5 +124,15 @@
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-brand {
+    font-size: 1.1rem; 
+  }
+  
+  .nav-container {
+    padding: 0 1rem;
   }
 }

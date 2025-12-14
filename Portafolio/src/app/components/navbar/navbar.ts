@@ -1,4 +1,3 @@
-// ===== navbar.component.ts =====
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Scroll } from '../../services/scroll';
@@ -47,5 +46,3 @@ export class Navbar implements OnInit {
     this.isMenuOpen = !this.isMenuOpen;
   }
 }
-
-

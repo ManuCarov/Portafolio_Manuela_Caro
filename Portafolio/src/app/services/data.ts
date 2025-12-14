@@ -92,7 +92,8 @@ export class Data {
           'Recolecté, procesé y analicé datos operativos y de desempeño usando SQL y Power BI.',
           'Diseñé y mantuve dashboards interactivos en Power BI para apoyar la toma de decisiones basada en datos.',
           'Automaticé flujos internos con Power Automate, mejorando la eficiencia y reduciendo esfuerzo manual.',
-          'Monitoreé indicadores clave (KPIs) y entregué insights accionables a la gerencia para optimizar procesos.'
+          'Monitoreé indicadores clave (KPIs) y entregué insights accionables a la gerencia para optimizar procesos.',
+          'Desarrollé como fullstack, y única desarrolladora, un Portal de BI para la centralización de los tableros'
         ]
       },
       {
@@ -157,7 +158,8 @@ export class Data {
       programming: [
         'C#', 'Python', 'Java', 'HTML', 'CSS', 
         'TypeScript', 'Git', 'React', 'SQL', 
-        'Power BI', 'Power Automate'
+        'Power BI', 'Power Automate', 'Angular', 
+        'Django', 'Unity'
       ],
       agile: [
         'Scrum (Scrum Master)', 'Kanban', 'Scrum at Scale'
@@ -165,7 +167,7 @@ export class Data {
       design: [
         'UX/UI Design', 'Figma', 'UserFlows', 
         'Estándares de Diseño', 'Sistemas de Diseño', 
-        'Wireframes', 'Diagramas de Flujo'
+        'Wireframes', 'Diagramas de Flujo', 'Atomic Design'
       ],
       soft: [
         'Liderazgo', 'Trabajo en equipo', 
@@ -178,38 +180,34 @@ export class Data {
   getProjects(): Project[] {
     return [
       {
-        id: 'omegahack',
-        title: 'OmegaHack 2024',
-        description: 'Dirigí la competencia estudiantil anual de tecnología e innovación más importante de la Universidad EAFIT. Coordiné equipos multidisciplinarios, gestioné presupuesto y logística, logrando más del 90% de satisfacción de participantes.',
-        imageUrl: 'assets/projects/omegahack.jpg',
-        technologies: ['Gestión de Proyectos', 'Liderazgo', 'Organización de Eventos', 'Coordinación de Equipos'],
-        featured: true
-      },
-      {
         id: 'powerbi-dashboards',
         title: 'Dashboards Interactivos - Smart Fit',
-        description: 'Diseñé y desarrollé dashboards interactivos en Power BI para análisis de datos operativos y de desempeño. Automaticé flujos de trabajo con Power Automate, mejorando la eficiencia y reduciendo el esfuerzo manual en un 40%.',
-        imageUrl: 'assets/projects/powerbi-dashboard.png',
-        technologies: ['Power BI', 'SQL', 'Power Automate', 'Análisis de Datos', 'KPIs'],
+        description: 'Desarrollé un portal de Business Intelligence full stack, centralizando en un lugar los múltiples tableros y la documentación de estos. Implementé una arquitectura end-to-end con Angular, Node.js, MySQL y consumo de APIs, optimizando el acceso a métricas clave para la toma de decisiones.',
+        imageUrl:'assets/projects/PowerBi.png',
+        videoUrl: 'https://www.youtube.com/embed/LKRCxdkOoZg',
+        technologies: ['Power BI', 'MySQL', 'Power Automate', 'Análisis de Datos', 'Angular', 'Node.js', 'API'],
         featured: true
       },
+
       {
-        id: 'videogame-dev',
-        title: 'Desarrollo de Videojuegos',
-        description: 'Proyectos de desarrollo de videojuegos realizados en Academy by Polygonus. Implementación de mecánicas de juego, diseño de niveles y optimización de rendimiento usando Unity y C#.',
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        imageUrl: 'assets/projects/videogame.jpg',
-        technologies: ['Unity', 'C#', 'Game Design', 'Game Development'],
+        id: 'trainer-fitness-app',
+        title: 'Coach Personal',
+        description: 'Plataforma digital para entrenador personal que integra tienda online de productos de proteína y sistema de reserva de entrenamientos personalizados. Diseño completo en Figma incluyendo research, wireframes, prototipos interactivos y sistema de diseño.',
+        imageUrl: 'assets/projects/Coachpersonal.png',
+        technologies: ['Figma', 'UX/UI Design', 'User Research', 'Prototyping', 'E-commerce Design', 'Design System', 'Atomic Design' ],
+        liveUrl: 'https://www.figma.com/proto/JEwtzbaMKTQFyyAgMyU7ND/Tuiran-Fit?page-id=0%3A1&node-id=18-25&starting-point-node-id=18%3A25&t=duIjriICHQNmX0Lu-1',
+        featured: true
+      },
+
+      {
+        id: 'retrovibes',
+        title: 'RetroVibes',
+        description: 'Plataforma e-commerce desarrollada en Django para la compra y venta de vinilos vintage y modernos. Como desarrolladora frontend, implementé toda la interfaz de usuario con HTML, CSS y Python, creando una experiencia de compra fluida y atractiva. El proyecto incluye catálogo de productos, carrito de compras, perfil de usuario, y proceso de checkout completo. Proyecto universitario desarrollado en equipo aplicando metodologías ágiles.',
+        videoUrl: 'https://www.youtube.com/embed/uS4ljAZ9Rtk',
+        technologies: ['Django', 'HTML', 'CSS', 'Python', 'Bootstrap', 'Frontend Development', 'UI Implementation'],
         featured: false
       },
-      {
-        id: 'ux-ui-projects',
-        title: 'Proyectos UX/UI',
-        description: 'Diseño de experiencias de usuario y prototipos interactivos para diversas aplicaciones. Investigación de usuarios, creación de wireframes, prototipos de alta fidelidad y pruebas de usabilidad.',
-        imageUrl: 'assets/projects/placeholder.png',
-        technologies: ['Figma', 'UX Research', 'Wireframing', 'Prototyping', 'User Testing'],
-        featured: false
-      }
+
     ];
   }
 

@@ -34,7 +34,7 @@
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 
 .timeline::before {
@@ -50,8 +50,8 @@
 
 .timeline-item {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  gap: 3rem;
+  margin-bottom: 4rem;
   position: relative;
 }
 
@@ -85,7 +85,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-left: 4px solid #6366f1;
   transition: all 0.3s ease;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 .timeline-content:hover {
