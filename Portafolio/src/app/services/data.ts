@@ -181,7 +181,7 @@ export class Data {
     return [
       {
         id: 'powerbi-dashboards',
-        title: 'Dashboards Interactivos - Smart Fit',
+        title: 'Portal BI - Smart Fit',
         description: 'Desarrollé un portal de Business Intelligence full stack, centralizando en un lugar los múltiples tableros y la documentación de estos. Implementé una arquitectura end-to-end con Angular, Node.js, MySQL y consumo de APIs, optimizando el acceso a métricas clave para la toma de decisiones.',
         imageUrl:'assets/projects/PowerBi.png',
         videoUrl: 'https://www.youtube.com/embed/LKRCxdkOoZg',
