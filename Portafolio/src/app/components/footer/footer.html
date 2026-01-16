@@ -3,7 +3,7 @@
     <div class="footer-content">
       <div class="footer-info">
         <h3 class="footer-name">{{ personalInfo.name }}</h3>
-        <p class="footer-tagline">Ingeniera de Sistemas | Scrum Master | Analista de Datos</p>
+        <p class="footer-tagline">{{ heroRole }}</p>
       </div>
       
       <div class="footer-links">
@@ -17,7 +17,7 @@
       </div>
       
       <p class="footer-copyright">
-        &copy; {{ currentYear }} {{ personalInfo.name }}. Todos los derechos reservados.
+        &copy; {{ currentYear }} {{ personalInfo.name }}. {{ translationService.translate('footer.rights') }}
       </p>
     </div>
   </div>

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';  // ✅ DEBE ESTAR
+import { CommonModule } from '@angular/common';  
 import { Data } from '../../services/data';
 import { Skills } from '../../models/skill/skill-module';
+import { Translation, Language } from '../../services/translation';
 
 @Component({
   selector: 'app-skills',
@@ -12,6 +13,7 @@ import { Skills } from '../../models/skill/skill-module';
 })
 export class SkillsComponent implements OnInit {
   skills!: Skills;
+  currentLang: Language = 'es';
 
   skillCategories = [
     { key: 'programming', title: 'Programación y Datos', icon: '💻' },
@@ -20,10 +22,48 @@ export class SkillsComponent implements OnInit {
     { key: 'soft', title: 'Habilidades Blandas', icon: '💡' }
   ];
 
-  constructor(private dataService: Data) {}
+  constructor(
+    private dataService: Data,
+    public translationService: Translation
+  ) {}
 
-  ngOnInit(): void {
-    this.skills = this.dataService.getSkills();
+
+ngOnInit(): void {
+    this.loadData();
+    
+    this.translationService.currentLanguage$.subscribe(lang => {
+      this.currentLang = lang;
+      this.loadData();
+    });
+}
+
+updateCategories(): void {
+  this.skillCategories = [
+    { 
+      key: 'programming', 
+      title: this.translationService.translate('skillCategories.programming'),
+      icon: '💻' 
+    },
+    { 
+      key: 'agile', 
+      title: this.translationService.translate('skillCategories.agile'),
+      icon: '🔄' 
+    },
+    { 
+      key: 'design', 
+      title: this.translationService.translate('skillCategories.design'),
+      icon: '🎨' 
+    },
+    { 
+      key: 'soft', 
+      title: this.translationService.translate('skillCategories.soft'),
+      icon: '💡' 
+    }
+  ];
+}
+
+  loadData(): void {
+    this.skills = this.dataService.getSkills(this.currentLang);
   }
 
   getSkillsForCategory(key: string): string[] {

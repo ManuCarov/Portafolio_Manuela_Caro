@@ -1,6 +1,6 @@
 <section id="projects" class="projects-section">
   <div class="container">
-    <h2 class="section-title">Proyectos</h2>
+    <h2 class="section-title">{{ translationService.translate('sections.projectsTitle') }}</h2>
     <div class="projects-grid">
       <div class="project-card" *ngFor="let project of projects" [class.featured]="project.featured">
         <div class="project-media">

@@ -1,14 +1,10 @@
 <nav class="navbar">
   <div class="nav-container">
+    
     <div class="nav-brand" (click)="scrollToSection('home')">
       {{ name }}
     </div>
-    
-    <button class="nav-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+
 
     <ul class="nav-menu" [class.active]="isMenuOpen">
       <li *ngFor="let item of menuItems">
@@ -16,9 +12,19 @@
           (click)="scrollToSection(item.id)" 
           [class.active]="activeSection === item.id"
           class="nav-link">
-          {{ item.label }}
+          {{ getLabel(item.labelKey) }}
         </a>
       </li>
     </ul>
+
+    <div class="nav-right">
+      <app-language-selector></app-language-selector>
+      
+      <button class="nav-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </nav>

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Data } from '../../services/data';
 import { Education } from '../../models/education/education-module';
+import { Translation, Language } from '../../services/translation';
+
 
 @Component({
   selector: 'app-education',
@@ -12,10 +14,23 @@ import { Education } from '../../models/education/education-module';
 })
 export class EducationComponent implements OnInit {
   education: Education[] = [];
+  currentLang: Language = 'es';
 
-  constructor(private dataService: Data) {}
-
+  constructor(
+    private dataService: Data,
+    public translationService: Translation
+  ) {}
+  
   ngOnInit(): void {
-    this.education = this.dataService.getEducation();
+    this.loadData();
+    
+    this.translationService.currentLanguage$.subscribe(lang => {
+      this.currentLang = lang;
+      this.loadData();
+    });
+  }
+
+  loadData(): void {
+    this.education = this.dataService.getEducation(this.currentLang);
   }
 }

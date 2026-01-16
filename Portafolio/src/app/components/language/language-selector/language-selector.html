@@ -1,0 +1,14 @@
+<div class="language-selector">
+  <button 
+    class="lang-button" 
+    [class.active]="currentLanguage === 'es'"
+    (click)="setLanguage('es')">
+    🇪🇸 ES
+  </button>
+  <button 
+    class="lang-button" 
+    [class.active]="currentLanguage === 'en'"
+    (click)="setLanguage('en')">
+    🇺🇸 EN
+  </button>
+</div>
