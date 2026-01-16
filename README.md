@@ -42,11 +42,15 @@ Portafolio personal interactivo y responsivo que presenta mi experiencia profesi
 ```
 Portafolio_Manuela_Caro/
 ├── Portafolio/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── models/
+│   │   ├── services/
+│   │   ├── app.ts
 │   ├── assets/
 │   │   ├── images/
 │   │   └── projects/
 │   ├── styles/
-│   ├── scripts/
 │   └── index.html
 ├── .gitignore
 └── README.md
