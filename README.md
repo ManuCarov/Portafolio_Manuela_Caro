@@ -32,9 +32,9 @@ Portafolio personal interactivo y responsivo que presenta mi experiencia profesi
 
 ## Tecnologías Utilizadas
 
-- **TypeScript** (42.1%) - Lógica y funcionalidad del sitio
-- **CSS3** (37.9%) - Estilos y diseño visual
-- **HTML5** (20.0%) - Estructura del contenido
+- **TypeScript** - Lógica y funcionalidad del sitio
+- **CSS3**  - Estilos y diseño visual
+- **HTML5** - Estructura del contenido
 - **Vercel** - Deployment y hosting
 
 ## Estructura del Proyecto
@@ -56,33 +56,51 @@ Portafolio_Manuela_Caro/
 └── README.md
 ```
 
-## Instalación y Uso
+## 🚀 Instalación y Uso
 
-### Requisitos Previos
+### Opción 1: Visualización Directa (Recomendada)
+Simplemente visita: [portafolio-manuela-caro.vercel.app](https://portafolio-manuela-caro.vercel.app/)
 
-- Navegador web moderno
-- (Opcional) Servidor local como Live Server para desarrollo
+### Opción 2: Ejecutar Localmente
 
-### Clonar el Repositorio
+#### Requisitos Previos
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- (Opcional) Node.js para servidor local
+- (Opcional) Visual Studio Code con extensión Live Server
 
+#### Pasos
+
+1. **Clonar el Repositorio**
 ```bash
 git clone https://github.com/ManuCarov/Portafolio_Manuela_Caro.git
 cd Portafolio_Manuela_Caro
 ```
 
-### Ejecutar Localmente
+2. **Abrir en el Navegador**
 
-1. Navega a la carpeta del proyecto
-2. Abre `index.html` en tu navegador, o
-3. Usa un servidor local:
-   ```bash
-   # Con Python
-   python -m http.server 8000
-   
-   # Con Node.js (http-server)
-   npx http-server
-   ```
+**Opción A - Abrir directamente:**
+```bash
+# Navega a la carpeta Portafolio y abre index.html en tu navegador
+```
 
+**Opción B - Con servidor local (Python):**
+```bash
+cd Portafolio
+python -m http.server 8000
+# Abre http://localhost:8000 en tu navegador
+```
+
+**Opción C - Con servidor local (Node.js):**
+```bash
+cd Portafolio
+npx http-server
+# Abre http://localhost:8080 en tu navegador
+```
+
+**Opción D - Con VS Code Live Server:**
+1. Abre el proyecto en VS Code
+2. Haz clic derecho en `index.html`
+3. Selecciona "Open with Live Server"
 ## Proyectos Destacados
 
 ### Portal BI - Smart Fit
@@ -122,5 +140,6 @@ E-commerce de vinilos vintage desarrollado en Django con catálogo, carrito de c
 ---
 
 ⭐ Si te gustó mi portafolio, ¡considera dejar una estrella en el repositorio!
+
 
 **Desarrollado con 💜 por Manuela Caro Villada**
