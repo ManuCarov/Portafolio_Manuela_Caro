@@ -27,43 +27,43 @@ export class SkillsComponent implements OnInit {
     public translationService: Translation
   ) {}
 
-
-ngOnInit(): void {
+  ngOnInit(): void {
     this.loadData();
     
     this.translationService.currentLanguage$.subscribe(lang => {
       this.currentLang = lang;
       this.loadData();
     });
-}
-
-updateCategories(): void {
-  this.skillCategories = [
-    { 
-      key: 'programming', 
-      title: this.translationService.translate('skillCategories.programming'),
-      icon: '💻' 
-    },
-    { 
-      key: 'agile', 
-      title: this.translationService.translate('skillCategories.agile'),
-      icon: '🔄' 
-    },
-    { 
-      key: 'design', 
-      title: this.translationService.translate('skillCategories.design'),
-      icon: '🎨' 
-    },
-    { 
-      key: 'soft', 
-      title: this.translationService.translate('skillCategories.soft'),
-      icon: '💡' 
-    }
-  ];
-}
+  }
 
   loadData(): void {
     this.skills = this.dataService.getSkills(this.currentLang);
+    this.updateCategories();
+  }
+
+  updateCategories(): void {
+    this.skillCategories = [
+      { 
+        key: 'programming', 
+        title: this.translationService.translate('skillCategories.programming'),
+        icon: '💻' 
+      },
+      { 
+        key: 'agile', 
+        title: this.translationService.translate('skillCategories.agile'),
+        icon: '🔄' 
+      },
+      { 
+        key: 'design', 
+        title: this.translationService.translate('skillCategories.design'),
+        icon: '🎨' 
+      },
+      { 
+        key: 'soft', 
+        title: this.translationService.translate('skillCategories.soft'),
+        icon: '💡' 
+      }
+    ];
   }
 
   getSkillsForCategory(key: string): string[] {
