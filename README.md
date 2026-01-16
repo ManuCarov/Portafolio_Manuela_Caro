@@ -83,24 +83,13 @@ cd Portafolio_Manuela_Caro
 # Navega a la carpeta Portafolio y abre index.html en tu navegador
 ```
 
-**Opción B - Con servidor local (Python):**
-```bash
-cd Portafolio
-python -m http.server 8000
-# Abre http://localhost:8000 en tu navegador
-```
-
-**Opción C - Con servidor local (Node.js):**
+**Opción B - Con servidor local (Node.js):**
 ```bash
 cd Portafolio
 npx http-server
 # Abre http://localhost:8080 en tu navegador
 ```
 
-**Opción D - Con VS Code Live Server:**
-1. Abre el proyecto en VS Code
-2. Haz clic derecho en `index.html`
-3. Selecciona "Open with Live Server"
 ## Proyectos Destacados
 
 ### Portal BI - Smart Fit
