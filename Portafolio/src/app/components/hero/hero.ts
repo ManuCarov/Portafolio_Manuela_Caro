@@ -15,6 +15,7 @@ import { Translation } from '../../services/translation';
 export class HeroComponent implements OnInit {
   heroRole: string = '';
   personalInfo!: PersonalInfo;
+mailto: any;
 
   constructor(
     private dataService: Data,
