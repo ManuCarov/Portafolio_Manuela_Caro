@@ -384,7 +384,7 @@ export class Data {
           imageUrl: 'assets/projects/Coachpersonal.png',
           technologies: ['Figma', 'UX/UI Design', 'User Research', 'Prototyping', 'E-commerce Design', 'Design System', 'Atomic Design'],
           liveUrl: 'https://www.figma.com/proto/JEwtzbaMKTQFyyAgMyU7ND/Tuiran-Fit?page-id=0%3A1&node-id=18-25&starting-point-node-id=18%3A25&t=duIjriICHQNmX0Lu-1',
-          featured: true
+          featured: false
         },
         {
           id: 'retrovibes',
@@ -398,16 +398,24 @@ export class Data {
           id: 'maqbim-ux-audit',
           title: 'MAQBIM — UX/UI Audit',
           description: 'UX/UI audit of MAQBIM, a Colombian platform for renting heavy machinery. The audit covered heuristic evaluation, usability analysis, user flow review, and visual design assessment, delivering actionable recommendations to improve the user experience for both machinery renters and providers.',
-          imageUrl: 'assets/projects/placeholder.jpg',
+          imageUrl: 'assets/projects/Maqbim.png',
           technologies: ['UX Audit', 'Heuristic Evaluation', 'Figma', 'Usability Analysis', 'UX/UI Design', 'User Flows'],
           liveUrl: 'https://maqbim.com/',
+          featured: true
+        },
+        {
+          id: 'maqbim-redesign',
+          title: 'MAQBIM — Figma Redesign',
+          description: 'Full UX/UI redesign of the MAQBIM platform in Figma, based on findings from the prior audit. The redesign focused on improving navigation, visual hierarchy, and the overall rental flow for both machinery seekers and providers, with a refreshed design system aligned with the brand.',
+          imageUrl: 'assets/projects/placeholder.jpg',
+          technologies: ['Figma', 'UX/UI Design', 'Design System', 'Wireframes', 'Prototyping', 'User Flows'],
           featured: false
         },
         {
           id: 'alumbratech-frontend',
           title: 'Alumbra Tech — Frontend Development',
-          description: 'Frontend development for Alumbratech, a technology and education ecosystem empowering women in Colombia. Built the complete website from design to implementation, translating the brand\'s purpose-driven identity into an accessible, visually cohesive digital experience.',
-          imageUrl: 'assets/projects/placeholder.jpg',
+          description: 'Frontend development for Alumbratech, a technology and education ecosystem empowering women in Colombia. Built the complete website, translating the brand\'s purpose-driven identity into an accessible, visually cohesive digital experience.',
+          imageUrl: 'assets/projects/Alumbratech.png',
           technologies: ['HTML', 'CSS', 'JavaScript', 'Next.js', 'Frontend Development', 'Responsive Design'],
           liveUrl: 'https://alumbratech.com/',
           featured: false
@@ -416,16 +424,16 @@ export class Data {
           id: 'wedding-invitation',
           title: 'Jeisson & Melissa — Wedding Invitation',
           description: 'Digital wedding invitation developed for Jeisson and Melissa\'s wedding. The experience features an animated envelope opening, countdown timer, RSVP form, event details, and a warm visual design that captures the couple\'s style. Fully responsive and deployed on Netlify.',
-          imageUrl: 'assets/projects/placeholder.jpg',
+          imageUrl: 'assets/projects/BodaJM.png',
           technologies: ['HTML', 'CSS', 'JavaScript', 'Frontend Development', 'Web Design', 'Netlify'],
           liveUrl: 'https://jeisson-y-melissa.netlify.app/',
-          featured: false
+          featured: true
         },
         {
           id: 'paula-caro',
           title: 'Paula Caro — Website',
           description: 'Frontend development of the personal website for Paula Caro, an emotional wellness coach. The site includes a landing page for her free masterclass, an interactive question form, a photo carousel, and a podcast section — all with a warm, human-centered design aligned with her brand.',
-          imageUrl: 'assets/projects/placeholder.jpg',
+          imageUrl: 'assets/projects/PaulaCaro.png',
           technologies: ['HTML', 'CSS', 'JavaScript', 'Frontend Development', 'Web Design', 'Landing Page'],
           liveUrl: 'https://paulacaro.co/',
           featured: false
@@ -450,7 +458,7 @@ export class Data {
         imageUrl: 'assets/projects/Coachpersonal.png',
         technologies: ['Figma', 'UX/UI Design', 'User Research', 'Prototyping', 'E-commerce Design', 'Design System', 'Atomic Design'],
         liveUrl: 'https://www.figma.com/proto/JEwtzbaMKTQFyyAgMyU7ND/Tuiran-Fit?page-id=0%3A1&node-id=18-25&starting-point-node-id=18%3A25&t=duIjriICHQNmX0Lu-1',
-        featured: true
+        featured: false
       },
       {
         id: 'retrovibes',
@@ -464,16 +472,24 @@ export class Data {
         id: 'maqbim-ux-audit',
         title: 'MAQBIM — Auditoría UX/UI',
         description: 'Auditoría UX/UI de MAQBIM, plataforma colombiana para el alquiler de maquinaria pesada. La auditoría incluyó evaluación heurística, análisis de usabilidad, revisión de flujos de usuario y valoración del diseño visual, entregando recomendaciones accionables para mejorar la experiencia tanto de arrendatarios como de proveedores de maquinaria.',
-        imageUrl: 'assets/projects/placeholder.jpg',
+        imageUrl: 'assets/projects/Maqbim.png',
         technologies: ['Auditoría UX', 'Evaluación Heurística', 'Figma', 'Análisis de Usabilidad', 'UX/UI Design', 'User Flows'],
         liveUrl: 'https://maqbim.com/',
+        featured: true
+      },
+      {
+        id: 'maqbim-redesign',
+        title: 'MAQBIM — Rediseño en Figma',
+        description: 'Rediseño completo de la plataforma MAQBIM en Figma, basado en los hallazgos de la auditoría previa. El rediseño se enfocó en mejorar la navegación, jerarquía visual y el flujo de alquiler para arrendatarios y proveedores, con un sistema de diseño renovado alineado con la marca.',
+        imageUrl: 'assets/projects/placeholder.jpg',
+        technologies: ['Figma', 'UX/UI Design', 'Sistema de Diseño', 'Wireframes', 'Prototipado', 'User Flows'],
         featured: false
       },
       {
         id: 'alumbratech-frontend',
         title: 'Alumbra Tech — Desarrollo Frontend',
-        description: 'Desarrollo frontend de Alumbratech, un ecosistema de tecnología y formación para mujeres en Colombia. Construí el sitio web completo desde el diseño hasta la implementación, traduciendo la identidad con propósito de la marca en una experiencia digital accesible y visualmente coherente.',
-        imageUrl: 'assets/projects/placeholder.jpg',
+        description: 'Desarrollo frontend de Alumbratech, un ecosistema de tecnología y formación para mujeres en Colombia. Construí el sitio web completo, traduciendo la identidad con propósito de la marca en una experiencia digital accesible y visualmente coherente.',
+        imageUrl: 'assets/projects/Alumbratech.png',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Next.js', 'Desarrollo Frontend', 'Diseño Responsivo'],
         liveUrl: 'https://alumbratech.com/',
         featured: false
@@ -482,16 +498,16 @@ export class Data {
         id: 'wedding-invitation',
         title: 'Jeisson & Melissa — Invitación de Boda',
         description: 'Invitación de boda digital desarrollada para el matrimonio de Jeisson y Melissa. La experiencia incluye animación de apertura de sobre, cuenta regresiva, formulario de confirmación de asistencia, detalles del evento y un diseño visual cálido que refleja el estilo de la pareja. Totalmente responsiva y desplegada en Netlify.',
-        imageUrl: 'assets/projects/placeholder.jpg',
+        imageUrl: 'assets/projects/BodaJM.png',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Desarrollo Frontend', 'Diseño Web', 'Netlify'],
         liveUrl: 'https://jeisson-y-melissa.netlify.app/',
-        featured: false
+        featured: true
       },
       {
         id: 'paula-caro',
         title: 'Paula Caro — Sitio Web',
         description: 'Desarrollo frontend del sitio web personal de Paula Caro, coach de bienestar emocional. El sitio incluye una landing page para su masterclass gratuita, formulario interactivo de preguntas, carrusel de fotos y sección de podcast, todo con un diseño cálido y humano alineado con su marca.',
-        imageUrl: 'assets/projects/placeholder.jpg',
+        imageUrl: 'assets/projects/PaulaCaro.png',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Desarrollo Frontend', 'Diseño Web', 'Landing Page'],
         liveUrl: 'https://paulacaro.co/',
         featured: false
