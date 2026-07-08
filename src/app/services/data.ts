@@ -395,25 +395,17 @@ export class Data {
           featured: false
         },
         {
-          id: 'maqbim-ux-audit',
-          title: 'MAQBIM — UX/UI Audit',
-          description: 'UX/UI audit of MAQBIM, a Colombian platform for renting heavy machinery. The audit covered heuristic evaluation, usability analysis, user flow review, and visual design assessment, delivering actionable recommendations to improve the user experience for both machinery renters and providers.',
+          id: 'maqbim',
+          title: 'MAQBIM — UX/UI Audit & Redesign',
+          description: 'UX/UI audit and full redesign of MAQBIM, a Colombian platform for renting heavy machinery. The audit covered heuristic evaluation, usability analysis, and user flow review. Based on the findings, a complete redesign was developed in Figma with improved navigation, visual hierarchy, and a refreshed design system aligned with the brand.',
           imageUrl: 'assets/projects/Maqbim.png',
-          technologies: ['UX Audit', 'Heuristic Evaluation', 'Figma', 'Usability Analysis', 'UX/UI Design', 'User Flows'],
+          technologies: ['UX Audit', 'Heuristic Evaluation', 'Figma', 'Usability Analysis', 'UX/UI Design', 'User Flows', 'Design System', 'Prototyping'],
           liveUrl: 'https://maqbim.com/',
           featured: true
         },
         {
-          id: 'maqbim-redesign',
-          title: 'MAQBIM — Figma Redesign',
-          description: 'Full UX/UI redesign of the MAQBIM platform in Figma, based on findings from the prior audit. The redesign focused on improving navigation, visual hierarchy, and the overall rental flow for both machinery seekers and providers, with a refreshed design system aligned with the brand.',
-          imageUrl: 'assets/projects/placeholder.jpg',
-          technologies: ['Figma', 'UX/UI Design', 'Design System', 'Wireframes', 'Prototyping', 'User Flows'],
-          featured: false
-        },
-        {
           id: 'alumbratech-frontend',
-          title: 'Alumbra Tech — Frontend Development',
+          title: 'Alumbratech — Frontend Development',
           description: 'Frontend development for Alumbratech, a technology and education ecosystem empowering women in Colombia. Built the complete website, translating the brand\'s purpose-driven identity into an accessible, visually cohesive digital experience.',
           imageUrl: 'assets/projects/Alumbratech.png',
           technologies: ['HTML', 'CSS', 'JavaScript', 'Next.js', 'Frontend Development', 'Responsive Design'],
@@ -469,25 +461,17 @@ export class Data {
         featured: false
       },
       {
-        id: 'maqbim-ux-audit',
-        title: 'MAQBIM — Auditoría UX/UI',
-        description: 'Auditoría UX/UI de MAQBIM, plataforma colombiana para el alquiler de maquinaria pesada. La auditoría incluyó evaluación heurística, análisis de usabilidad, revisión de flujos de usuario y valoración del diseño visual, entregando recomendaciones accionables para mejorar la experiencia tanto de arrendatarios como de proveedores de maquinaria.',
+        id: 'maqbim',
+        title: 'MAQBIM — Auditoría y Rediseño UX/UI',
+        description: 'Auditoría UX/UI y rediseño completo de MAQBIM, plataforma colombiana para el alquiler de maquinaria pesada. La auditoría incluyó evaluación heurística, análisis de usabilidad y revisión de flujos de usuario. A partir de los hallazgos, se desarrolló un rediseño completo en Figma con navegación mejorada, jerarquía visual clara y un sistema de diseño renovado alineado con la marca.',
         imageUrl: 'assets/projects/Maqbim.png',
-        technologies: ['Auditoría UX', 'Evaluación Heurística', 'Figma', 'Análisis de Usabilidad', 'UX/UI Design', 'User Flows'],
+        technologies: ['Auditoría UX', 'Evaluación Heurística', 'Figma', 'Análisis de Usabilidad', 'UX/UI Design', 'User Flows', 'Sistema de Diseño', 'Prototipado'],
         liveUrl: 'https://maqbim.com/',
         featured: true
       },
       {
-        id: 'maqbim-redesign',
-        title: 'MAQBIM — Rediseño en Figma',
-        description: 'Rediseño completo de la plataforma MAQBIM en Figma, basado en los hallazgos de la auditoría previa. El rediseño se enfocó en mejorar la navegación, jerarquía visual y el flujo de alquiler para arrendatarios y proveedores, con un sistema de diseño renovado alineado con la marca.',
-        imageUrl: 'assets/projects/placeholder.jpg',
-        technologies: ['Figma', 'UX/UI Design', 'Sistema de Diseño', 'Wireframes', 'Prototipado', 'User Flows'],
-        featured: false
-      },
-      {
         id: 'alumbratech-frontend',
-        title: 'Alumbra Tech — Desarrollo Frontend',
+        title: 'Alumbratech — Desarrollo Frontend',
         description: 'Desarrollo frontend de Alumbratech, un ecosistema de tecnología y formación para mujeres en Colombia. Construí el sitio web completo, traduciendo la identidad con propósito de la marca en una experiencia digital accesible y visualmente coherente.',
         imageUrl: 'assets/projects/Alumbratech.png',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Next.js', 'Desarrollo Frontend', 'Diseño Responsivo'],

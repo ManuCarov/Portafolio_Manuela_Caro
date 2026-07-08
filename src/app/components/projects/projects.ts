@@ -32,7 +32,11 @@ export class ProjectsComponent implements OnInit {
   }
 
   loadData(): void {
-    this.projects = this.dataService.getProjects(this.currentLang);
+    const all = this.dataService.getProjects(this.currentLang);
+    this.projects = [
+      ...all.filter(p => p.featured),
+      ...all.filter(p => !p.featured)
+    ];
   }
 
   getSafeUrl(url: string): SafeResourceUrl {
